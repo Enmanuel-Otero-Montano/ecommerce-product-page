@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ecommerce Product</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/images/icon-menu.svg" class="icon-menu" alt="icono de menu">
+        <img src="assets/images/logo.svg" class="logo" alt="logo de la marca">
+        <nav id="nav" class="nav nav-display">
+            <button id="close-button" class="close-button style-default-none" name="close" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+            </button>
+            <ul id="nav-list" class="nav__list">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="car-user-container">
+            <button class="button-cart style-default-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+                <p class="quantity__products display-none"></p>
+            </button>
+            <img src="assets/images/image-avatar.png" class="avatar" alt="imagen de usuario">
+        </div>
+    </header>
+    <main class="main">
+        <div class="product">
+            <div class="img-container">
+                <div class="previous-next-container">
+                    <button id="previous" class="previous style-default-none" name="previous" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    </button>
+                    <button id="next" class="next style-default-none" name="next" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    </button>
+                </div>
+                <img src="assets/images/image-product-1.jpg" class="image-product bordre-r" alt="image 1">
+                <img src="assets/images/image-product-2.jpg" class="image-product bordre-r display-none" alt="image 2">
+                <img src="assets/images/image-product-3.jpg" class="image-product bordre-r display-none" alt="image 3">
+                <img src="assets/images/image-product-4.jpg" class="image-product bordre-r display-none" alt="image 4">
+            </div>
+            <div class="img-thumbnail-container">
+                <img src="assets/images/image-product-1-thumbnail.jpg" class="bordre-r image-product-thumbnail" alt="image product thumbnail 1">
+                <img src="assets/images/image-product-2-thumbnail.jpg" class="bordre-r image-product-thumbnail" alt="image product thumbnail 2">
+                <img src="assets/images/image-product-3-thumbnail.jpg" class="bordre-r image-product-thumbnail" alt="image product thumbnail 3">
+                <img src="assets/images/image-product-4-thumbnail.jpg" class="bordre-r image-product-thumbnail" alt="image product thumbnail 4">
+            </div>
+        </div>
+        <section class="features-price-buy">
+            <h1 class="company-name">Sneaker Company</h1>
+            <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+            <p class="product-description">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="price-container">
+                <p class="price-with-discount">$125.00</p>
+                <p class="discount">50%</p>
+                <p class="price-without-discount">$250.00</p>
+            </div>
+            <div class="buy-container">
+                <div class="amount bordre-r">
+                    <button id="minus" class="amount__button minus style-default-none" name="minus" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="4"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+                    </button>
+                    <input type="number" id="input-type-number" class="input-number" value="0" readonly>
+                    <button id="plus" class="amount__button style-default-none" name="plus" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+                    </button>
+                </div>
+                <button class="add-to-cart style-default-none" name="buy" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+                    <p>Add to cart</p>
+                </button>
+            </div>
+        </section>
+        <div class="cart-information-container">
+            <p class="cart-information-container__header">Cart</p>
+            <p class="cart-information-container__empty">Your cart is empty</p>
+            <div class="cart-information-description">
+                <div class="cart-information-description-subcontainer">
+                    <img src="assets/images/image-product-1-thumbnail.jpg" alt="image product thumbnail 1">
+                    <div class="name-final-price">
+                        <p>Autumn Limited Edition...</p>
+                        <p class="product-price"></p>
+                    </div>
+                    <button id="delete" class="icon-delete style-default-none">
+                        <img src="assets/images/icon-delete.svg" alt="icono de eliminar">
+                    </button>
+                </div>
+                <button id="checkout" class="checkout style-default-none">
+                    Checkout
+                </button>
+            </div>
+        </div>
+        <div class="lightbox">
+            <button class="lightbox__close-button style-default-none" name="close" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+            </button>
+            <div class="lightbox__img-container">
+                <img src="assets/images/image-product-1.jpg" class="lightbox-image-product bordre-r display-none" alt="image 1">
+                <img src="assets/images/image-product-2.jpg" class="lightbox-image-product bordre-r display-none" alt="image 2">
+                <img src="assets/images/image-product-3.jpg" class="lightbox-image-product bordre-r display-none" alt="image 3">
+                <img src="assets/images/image-product-4.jpg" class="lightbox-image-product bordre-r display-none" alt="image 4">
+            </div>
+            <div class="lightbox__previous-next-container">
+                <button id="lightbox-previous-button" class="previous style-default-none" name="previous" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+                <button id="lightbox-next-button" class="next style-default-none" name="next" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+            </div>
+            <div class="lightbox__img-thumbnail-container">
+                <img src="assets/images/image-product-1-thumbnail.jpg" class="bordre-r lightbox-image-thumbnail" alt="image product thumbnail 1">
+                <img src="assets/images/image-product-2-thumbnail.jpg" class="bordre-r lightbox-image-thumbnail" alt="image product thumbnail 2">
+                <img src="assets/images/image-product-3-thumbnail.jpg" class="bordre-r lightbox-image-thumbnail" alt="image product thumbnail 3">
+                <img src="assets/images/image-product-4-thumbnail.jpg" class="bordre-r lightbox-image-thumbnail" alt="image product thumbnail 4">
+            </div>
+        </div>
+        <div class="body-active-menu" hidden></div>
+    </main>
+    <script src="js/js.js"></script>
+</body>
+</html>
