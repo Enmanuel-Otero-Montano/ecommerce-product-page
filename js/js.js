@@ -27,6 +27,7 @@ const lightboxImageContainer = document.querySelector(".lightbox__img-container"
 const lightboxCloseButton = document.querySelector(".lightbox__close-button")
 const lightboxPreviousButton = document.getElementById("lightbox-previous-button")
 const lightboxNextButton = document.getElementById("lightbox-next-button")
+const emptyCart = document.getElementById("delete")
 
 
 cartInformationEmpty.hidden = true
@@ -54,7 +55,7 @@ for(const link of navLinkArray) {
 let index = 0
 
 nextButton.addEventListener("click", ()=> {
-    if(index !== imagesProduct.length - 2){
+    if(index !== imagesProduct.length - 1){
         imagesProduct[index].classList.add("display-none")
         imagesProduct[index].nextElementSibling.classList.remove("display-none")
         ++index  
@@ -188,4 +189,14 @@ lightboxNextButton.addEventListener("click", function() {
         lightboxImagesProductArray[indexImage].classList.remove("display-none")
         lightboxImagesThumbnail[indexImage].classList.add("currently-showing")
     }
+})
+
+emptyCart.addEventListener("click", ()=> {
+    cartInformationEmpty.hidden = false
+    inputTypeNumber.value = 0
+    numberOfProductsInTheCart.classList.add("display-none")
+    cartInformationDescription.classList.add("cart-information-description-hidden")
+    setTimeout(() => {
+        cartInformation.classList.remove("cart-information-container-showing")
+    }, 800);
 })

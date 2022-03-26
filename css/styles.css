@@ -280,6 +280,8 @@ a {
     padding-bottom: 25px;
     background-color: hsl(0, 0%, 100%);
     border-radius: var(--border-radius);
+    transition-property: top;
+    transition-duration: 1s;
 }
 
 .cart-information-container-showing {
@@ -347,7 +349,7 @@ a {
     color: hsl(220, 13%, 13%);
 }
 
-.icon-delete {
+.button-delete {
     background-color: inherit;
 }
 
@@ -620,6 +622,10 @@ a {
         .previous:hover > svg > path,
         .next:hover > svg > path  {
             stroke: var(--primary-color-orange);
+        }
+
+        .button-delete:hover {
+            cursor: pointer;
         }
     }
 }
